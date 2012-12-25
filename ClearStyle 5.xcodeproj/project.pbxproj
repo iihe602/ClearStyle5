@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80E66AA816897A7A004FF85D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E66AA716897A7A004FF85D /* UIKit.framework */; };
+		80E66AAA16897A7A004FF85D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E66AA916897A7A004FF85D /* Foundation.framework */; };
+		80E66AAC16897A7A004FF85D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E66AAB16897A7A004FF85D /* CoreGraphics.framework */; };
+		80E66AB216897A7A004FF85D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80E66AB016897A7A004FF85D /* InfoPlist.strings */; };
+		80E66AB416897A7A004FF85D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AB316897A7A004FF85D /* main.m */; };
+		80E66AB816897A7A004FF85D /* TSTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AB716897A7A004FF85D /* TSTAppDelegate.m */; };
+		80E66ABA16897A7A004FF85D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66AB916897A7A004FF85D /* Default.png */; };
+		80E66ABC16897A7A004FF85D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ABB16897A7A004FF85D /* Default@2x.png */; };
+		80E66ABE16897A7A004FF85D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ABD16897A7A004FF85D /* Default-568h@2x.png */; };
+		80E66AC116897A7A004FF85D /* TSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AC016897A7A004FF85D /* TSTViewController.m */; };
+		80E66AC416897A7A004FF85D /* TSTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E66AC216897A7A004FF85D /* TSTViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80E66AA316897A7A004FF85D /* ClearStyle 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ClearStyle 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E66AA716897A7A004FF85D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80E66AA916897A7A004FF85D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80E66AAB16897A7A004FF85D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80E66AAF16897A7A004FF85D /* ClearStyle 5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClearStyle 5-Info.plist"; sourceTree = "<group>"; };
+		80E66AB116897A7A004FF85D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80E66AB316897A7A004FF85D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80E66AB516897A7A004FF85D /* ClearStyle 5-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClearStyle 5-Prefix.pch"; sourceTree = "<group>"; };
+		80E66AB616897A7A004FF85D /* TSTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTAppDelegate.h; sourceTree = "<group>"; };
+		80E66AB716897A7A004FF85D /* TSTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTAppDelegate.m; sourceTree = "<group>"; };
+		80E66AB916897A7A004FF85D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		80E66ABB16897A7A004FF85D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		80E66ABD16897A7A004FF85D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		80E66ABF16897A7A004FF85D /* TSTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTViewController.h; sourceTree = "<group>"; };
+		80E66AC016897A7A004FF85D /* TSTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTViewController.m; sourceTree = "<group>"; };
+		80E66AC316897A7A004FF85D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TSTViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80E66AA016897A7A004FF85D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E66AA816897A7A004FF85D /* UIKit.framework in Frameworks */,
+				80E66AAA16897A7A004FF85D /* Foundation.framework in Frameworks */,
+				80E66AAC16897A7A004FF85D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80E66A9816897A7A004FF85D = {
+			isa = PBXGroup;
+			children = (
+				80E66AAD16897A7A004FF85D /* ClearStyle 5 */,
+				80E66AA616897A7A004FF85D /* Frameworks */,
+				80E66AA416897A7A004FF85D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80E66AA416897A7A004FF85D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80E66AA316897A7A004FF85D /* ClearStyle 5.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80E66AA616897A7A004FF85D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E66AA716897A7A004FF85D /* UIKit.framework */,
+				80E66AA916897A7A004FF85D /* Foundation.framework */,
+				80E66AAB16897A7A004FF85D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80E66AAD16897A7A004FF85D /* ClearStyle 5 */ = {
+			isa = PBXGroup;
+			children = (
+				80E66AB616897A7A004FF85D /* TSTAppDelegate.h */,
+				80E66AB716897A7A004FF85D /* TSTAppDelegate.m */,
+				80E66ABF16897A7A004FF85D /* TSTViewController.h */,
+				80E66AC016897A7A004FF85D /* TSTViewController.m */,
+				80E66AC216897A7A004FF85D /* TSTViewController.xib */,
+				80E66AAE16897A7A004FF85D /* Supporting Files */,
+			);
+			path = "ClearStyle 5";
+			sourceTree = "<group>";
+		};
+		80E66AAE16897A7A004FF85D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80E66AAF16897A7A004FF85D /* ClearStyle 5-Info.plist */,
+				80E66AB016897A7A004FF85D /* InfoPlist.strings */,
+				80E66AB316897A7A004FF85D /* main.m */,
+				80E66AB516897A7A004FF85D /* ClearStyle 5-Prefix.pch */,
+				80E66AB916897A7A004FF85D /* Default.png */,
+				80E66ABB16897A7A004FF85D /* Default@2x.png */,
+				80E66ABD16897A7A004FF85D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80E66AA216897A7A004FF85D /* ClearStyle 5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E66AC716897A7A004FF85D /* Build configuration list for PBXNativeTarget "ClearStyle 5" */;
+			buildPhases = (
+				80E66A9F16897A7A004FF85D /* Sources */,
+				80E66AA016897A7A004FF85D /* Frameworks */,
+				80E66AA116897A7A004FF85D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ClearStyle 5";
+			productName = "ClearStyle 5";
+			productReference = 80E66AA316897A7A004FF85D /* ClearStyle 5.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80E66A9A16897A7A004FF85D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TST;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = wyq;
+			};
+			buildConfigurationList = 80E66A9D16897A7A004FF85D /* Build configuration list for PBXProject "ClearStyle 5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80E66A9816897A7A004FF85D;
+			productRefGroup = 80E66AA416897A7A004FF85D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80E66AA216897A7A004FF85D /* ClearStyle 5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80E66AA116897A7A004FF85D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E66AB216897A7A004FF85D /* InfoPlist.strings in Resources */,
+				80E66ABA16897A7A004FF85D /* Default.png in Resources */,
+				80E66ABC16897A7A004FF85D /* Default@2x.png in Resources */,
+				80E66ABE16897A7A004FF85D /* Default-568h@2x.png in Resources */,
+				80E66AC416897A7A004FF85D /* TSTViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80E66A9F16897A7A004FF85D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E66AB416897A7A004FF85D /* main.m in Sources */,
+				80E66AB816897A7A004FF85D /* TSTAppDelegate.m in Sources */,
+				80E66AC116897A7A004FF85D /* TSTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80E66AB016897A7A004FF85D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E66AB116897A7A004FF85D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80E66AC216897A7A004FF85D /* TSTViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E66AC316897A7A004FF85D /* en */,
+			);
+			name = TSTViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80E66AC516897A7A004FF85D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80E66AC616897A7A004FF85D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80E66AC816897A7A004FF85D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClearStyle 5/ClearStyle 5-Prefix.pch";
+				INFOPLIST_FILE = "ClearStyle 5/ClearStyle 5-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80E66AC916897A7A004FF85D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClearStyle 5/ClearStyle 5-Prefix.pch";
+				INFOPLIST_FILE = "ClearStyle 5/ClearStyle 5-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80E66A9D16897A7A004FF85D /* Build configuration list for PBXProject "ClearStyle 5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E66AC516897A7A004FF85D /* Debug */,
+				80E66AC616897A7A004FF85D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E66AC716897A7A004FF85D /* Build configuration list for PBXNativeTarget "ClearStyle 5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E66AC816897A7A004FF85D /* Debug */,
+				80E66AC916897A7A004FF85D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80E66A9A16897A7A004FF85D /* Project object */;
+}
