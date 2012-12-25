@@ -19,6 +19,8 @@
 		80E66ACD16897B1F004FF85D /* TSTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66ACB16897B1F004FF85D /* TSTTableViewController.m */; };
 		80E66ACE16897B1F004FF85D /* TSTTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */; };
 		80E66AD116898112004FF85D /* TSTToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AD016898112004FF85D /* TSTToDoItem.m */; };
+		80E66AD416898F64004FF85D /* TSTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AD316898F64004FF85D /* TSTTableViewCell.m */; };
+		80E66AD616898FA5004FF85D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E66AD516898FA5004FF85D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSTTableViewController.xib; sourceTree = "<group>"; };
 		80E66ACF16898112004FF85D /* TSTToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTToDoItem.h; sourceTree = "<group>"; };
 		80E66AD016898112004FF85D /* TSTToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTToDoItem.m; sourceTree = "<group>"; };
+		80E66AD216898F64004FF85D /* TSTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSTTableViewCell.h; path = ../TSTTableViewCell.h; sourceTree = "<group>"; };
+		80E66AD316898F64004FF85D /* TSTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSTTableViewCell.m; path = ../TSTTableViewCell.m; sourceTree = "<group>"; };
+		80E66AD516898FA5004FF85D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E66AD616898FA5004FF85D /* QuartzCore.framework in Frameworks */,
 				80E66AA816897A7A004FF85D /* UIKit.framework in Frameworks */,
 				80E66AAA16897A7A004FF85D /* Foundation.framework in Frameworks */,
 				80E66AAC16897A7A004FF85D /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +82,7 @@
 		80E66AA616897A7A004FF85D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80E66AD516898FA5004FF85D /* QuartzCore.framework */,
 				80E66AA716897A7A004FF85D /* UIKit.framework */,
 				80E66AA916897A7A004FF85D /* Foundation.framework */,
 				80E66AAB16897A7A004FF85D /* CoreGraphics.framework */,
@@ -94,6 +101,8 @@
 				80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */,
 				80E66ACF16898112004FF85D /* TSTToDoItem.h */,
 				80E66AD016898112004FF85D /* TSTToDoItem.m */,
+				80E66AD216898F64004FF85D /* TSTTableViewCell.h */,
+				80E66AD316898F64004FF85D /* TSTTableViewCell.m */,
 			);
 			path = "ClearStyle 5";
 			sourceTree = "<group>";
@@ -183,6 +192,7 @@
 				80E66AB816897A7A004FF85D /* TSTAppDelegate.m in Sources */,
 				80E66ACD16897B1F004FF85D /* TSTTableViewController.m in Sources */,
 				80E66AD116898112004FF85D /* TSTToDoItem.m in Sources */,
+				80E66AD416898F64004FF85D /* TSTTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

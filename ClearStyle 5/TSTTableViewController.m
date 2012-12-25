@@ -8,6 +8,7 @@
 
 #import "TSTTableViewController.h"
 #import "TSTToDoItem.h"
+#import "TSTTableViewCell.h"
 
 #define DEFAULT_CELLIDENTIFIER @"Cell"
 
@@ -51,6 +52,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.tableView registerClass:[TSTTableViewCell class] forCellReuseIdentifier:DEFAULT_CELLIDENTIFIER];
+    self.tableView.backgroundColor = [UIColor blackColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -58,7 +63,6 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:DEFAULT_CELLIDENTIFIER];
 }
 
 #pragma mark - Table view data source
@@ -77,7 +81,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DEFAULT_CELLIDENTIFIER];
+    TSTTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DEFAULT_CELLIDENTIFIER];
     
     // Configure the cell...
     TSTToDoItem *item = _toDoItems[indexPath.row];
@@ -137,5 +141,14 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
+
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger indexRow = indexPath.row;
+    float green = (float)indexRow / (float)(_toDoItems.count - 1) * 0.6f;
+    cell.backgroundColor = [UIColor colorWithRed:1.0f green:green blue:0.0f alpha:1.0f];
+}
+
 
 @end
