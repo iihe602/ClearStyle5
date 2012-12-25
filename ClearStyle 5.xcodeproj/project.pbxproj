@@ -16,8 +16,9 @@
 		80E66ABA16897A7A004FF85D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66AB916897A7A004FF85D /* Default.png */; };
 		80E66ABC16897A7A004FF85D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ABB16897A7A004FF85D /* Default@2x.png */; };
 		80E66ABE16897A7A004FF85D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ABD16897A7A004FF85D /* Default-568h@2x.png */; };
-		80E66AC116897A7A004FF85D /* TSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AC016897A7A004FF85D /* TSTViewController.m */; };
-		80E66AC416897A7A004FF85D /* TSTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E66AC216897A7A004FF85D /* TSTViewController.xib */; };
+		80E66ACD16897B1F004FF85D /* TSTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66ACB16897B1F004FF85D /* TSTTableViewController.m */; };
+		80E66ACE16897B1F004FF85D /* TSTTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */; };
+		80E66AD116898112004FF85D /* TSTToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AD016898112004FF85D /* TSTToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +35,11 @@
 		80E66AB916897A7A004FF85D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		80E66ABB16897A7A004FF85D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		80E66ABD16897A7A004FF85D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		80E66ABF16897A7A004FF85D /* TSTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTViewController.h; sourceTree = "<group>"; };
-		80E66AC016897A7A004FF85D /* TSTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTViewController.m; sourceTree = "<group>"; };
-		80E66AC316897A7A004FF85D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TSTViewController.xib; sourceTree = "<group>"; };
+		80E66ACA16897B1F004FF85D /* TSTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTTableViewController.h; sourceTree = "<group>"; };
+		80E66ACB16897B1F004FF85D /* TSTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTTableViewController.m; sourceTree = "<group>"; };
+		80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSTTableViewController.xib; sourceTree = "<group>"; };
+		80E66ACF16898112004FF85D /* TSTToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTToDoItem.h; sourceTree = "<group>"; };
+		80E66AD016898112004FF85D /* TSTToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +88,12 @@
 			children = (
 				80E66AB616897A7A004FF85D /* TSTAppDelegate.h */,
 				80E66AB716897A7A004FF85D /* TSTAppDelegate.m */,
-				80E66ABF16897A7A004FF85D /* TSTViewController.h */,
-				80E66AC016897A7A004FF85D /* TSTViewController.m */,
-				80E66AC216897A7A004FF85D /* TSTViewController.xib */,
 				80E66AAE16897A7A004FF85D /* Supporting Files */,
+				80E66ACA16897B1F004FF85D /* TSTTableViewController.h */,
+				80E66ACB16897B1F004FF85D /* TSTTableViewController.m */,
+				80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */,
+				80E66ACF16898112004FF85D /* TSTToDoItem.h */,
+				80E66AD016898112004FF85D /* TSTToDoItem.m */,
 			);
 			path = "ClearStyle 5";
 			sourceTree = "<group>";
@@ -163,7 +168,7 @@
 				80E66ABA16897A7A004FF85D /* Default.png in Resources */,
 				80E66ABC16897A7A004FF85D /* Default@2x.png in Resources */,
 				80E66ABE16897A7A004FF85D /* Default-568h@2x.png in Resources */,
-				80E66AC416897A7A004FF85D /* TSTViewController.xib in Resources */,
+				80E66ACE16897B1F004FF85D /* TSTTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +181,8 @@
 			files = (
 				80E66AB416897A7A004FF85D /* main.m in Sources */,
 				80E66AB816897A7A004FF85D /* TSTAppDelegate.m in Sources */,
-				80E66AC116897A7A004FF85D /* TSTViewController.m in Sources */,
+				80E66ACD16897B1F004FF85D /* TSTTableViewController.m in Sources */,
+				80E66AD116898112004FF85D /* TSTToDoItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +195,6 @@
 				80E66AB116897A7A004FF85D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		80E66AC216897A7A004FF85D /* TSTViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80E66AC316897A7A004FF85D /* en */,
-			);
-			name = TSTViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

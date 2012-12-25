@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class TSTViewController;
+@class TSTTableViewController;
 
 @interface TSTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) TSTViewController *viewController;
+@property (strong, nonatomic) TSTTableViewController *viewController;
 
 @end

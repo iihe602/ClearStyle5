@@ -1,5 +1,5 @@
 //
-//  TSTViewController.h
+//  TSTTableViewController.h
 //  ClearStyle 5
 //
 //  Created by wangyongqi on 12/25/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TSTViewController : UIViewController
+@interface TSTTableViewController : UITableViewController
 
 @end
