@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSTTableViewCellDelegate.h"
 
-@interface TSTTableViewController : UITableViewController
+@interface TSTTableViewController : UITableViewController<TSTTableViewCellDelegate>
 
 @end

@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSString *text;
 
+@property (nonatomic) bool completed;
+
 -(TSTToDoItem *)initWithText:(NSString *)text;
 
 +(TSTToDoItem *)toDoItemWithText:(NSString *)text;

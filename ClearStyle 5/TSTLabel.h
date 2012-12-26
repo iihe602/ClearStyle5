@@ -1,5 +1,5 @@
 //
-//  TSTTableViewCell.h
+//  TSTLabel.h
 //  ClearStyle 5
 //
 //  Created by wangyongqi on 12/25/12.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TSTTableViewCell : UITableViewCell
+@interface TSTLabel : UILabel
+
+@property (nonatomic) bool strikethrough;
 
 @end

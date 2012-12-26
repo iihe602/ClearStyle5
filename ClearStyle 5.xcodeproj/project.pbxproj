@@ -12,15 +12,16 @@
 		80E66AAC16897A7A004FF85D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E66AAB16897A7A004FF85D /* CoreGraphics.framework */; };
 		80E66AB216897A7A004FF85D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80E66AB016897A7A004FF85D /* InfoPlist.strings */; };
 		80E66AB416897A7A004FF85D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AB316897A7A004FF85D /* main.m */; };
-		80E66AB816897A7A004FF85D /* TSTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AB716897A7A004FF85D /* TSTAppDelegate.m */; };
 		80E66ABA16897A7A004FF85D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66AB916897A7A004FF85D /* Default.png */; };
 		80E66ABC16897A7A004FF85D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ABB16897A7A004FF85D /* Default@2x.png */; };
 		80E66ABE16897A7A004FF85D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ABD16897A7A004FF85D /* Default-568h@2x.png */; };
 		80E66ACD16897B1F004FF85D /* TSTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66ACB16897B1F004FF85D /* TSTTableViewController.m */; };
 		80E66ACE16897B1F004FF85D /* TSTTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */; };
 		80E66AD116898112004FF85D /* TSTToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AD016898112004FF85D /* TSTToDoItem.m */; };
-		80E66AD416898F64004FF85D /* TSTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AD316898F64004FF85D /* TSTTableViewCell.m */; };
 		80E66AD616898FA5004FF85D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E66AD516898FA5004FF85D /* QuartzCore.framework */; };
+		80E66AD91689A304004FF85D /* TSTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66AD81689A304004FF85D /* TSTTableViewCell.m */; };
+		80E66ADD1689A7A0004FF85D /* TSTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66ADC1689A7A0004FF85D /* TSTAppDelegate.m */; };
+		80E66AE01689A870004FF85D /* TSTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E66ADF1689A870004FF85D /* TSTLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,6 @@
 		80E66AB116897A7A004FF85D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80E66AB316897A7A004FF85D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80E66AB516897A7A004FF85D /* ClearStyle 5-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClearStyle 5-Prefix.pch"; sourceTree = "<group>"; };
-		80E66AB616897A7A004FF85D /* TSTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTAppDelegate.h; sourceTree = "<group>"; };
-		80E66AB716897A7A004FF85D /* TSTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTAppDelegate.m; sourceTree = "<group>"; };
 		80E66AB916897A7A004FF85D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		80E66ABB16897A7A004FF85D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		80E66ABD16897A7A004FF85D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -42,9 +41,14 @@
 		80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSTTableViewController.xib; sourceTree = "<group>"; };
 		80E66ACF16898112004FF85D /* TSTToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTToDoItem.h; sourceTree = "<group>"; };
 		80E66AD016898112004FF85D /* TSTToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTToDoItem.m; sourceTree = "<group>"; };
-		80E66AD216898F64004FF85D /* TSTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSTTableViewCell.h; path = ../TSTTableViewCell.h; sourceTree = "<group>"; };
-		80E66AD316898F64004FF85D /* TSTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSTTableViewCell.m; path = ../TSTTableViewCell.m; sourceTree = "<group>"; };
 		80E66AD516898FA5004FF85D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80E66AD71689A304004FF85D /* TSTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTTableViewCell.h; sourceTree = "<group>"; };
+		80E66AD81689A304004FF85D /* TSTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTTableViewCell.m; sourceTree = "<group>"; };
+		80E66ADA1689A333004FF85D /* TSTTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTTableViewCellDelegate.h; sourceTree = "<group>"; };
+		80E66ADB1689A7A0004FF85D /* TSTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTAppDelegate.h; sourceTree = "<group>"; };
+		80E66ADC1689A7A0004FF85D /* TSTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTAppDelegate.m; sourceTree = "<group>"; };
+		80E66ADE1689A870004FF85D /* TSTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTLabel.h; sourceTree = "<group>"; };
+		80E66ADF1689A870004FF85D /* TSTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,16 +97,19 @@
 		80E66AAD16897A7A004FF85D /* ClearStyle 5 */ = {
 			isa = PBXGroup;
 			children = (
-				80E66AB616897A7A004FF85D /* TSTAppDelegate.h */,
-				80E66AB716897A7A004FF85D /* TSTAppDelegate.m */,
+				80E66ADB1689A7A0004FF85D /* TSTAppDelegate.h */,
+				80E66ADC1689A7A0004FF85D /* TSTAppDelegate.m */,
 				80E66AAE16897A7A004FF85D /* Supporting Files */,
 				80E66ACA16897B1F004FF85D /* TSTTableViewController.h */,
 				80E66ACB16897B1F004FF85D /* TSTTableViewController.m */,
 				80E66ACC16897B1F004FF85D /* TSTTableViewController.xib */,
 				80E66ACF16898112004FF85D /* TSTToDoItem.h */,
 				80E66AD016898112004FF85D /* TSTToDoItem.m */,
-				80E66AD216898F64004FF85D /* TSTTableViewCell.h */,
-				80E66AD316898F64004FF85D /* TSTTableViewCell.m */,
+				80E66AD71689A304004FF85D /* TSTTableViewCell.h */,
+				80E66AD81689A304004FF85D /* TSTTableViewCell.m */,
+				80E66ADA1689A333004FF85D /* TSTTableViewCellDelegate.h */,
+				80E66ADE1689A870004FF85D /* TSTLabel.h */,
+				80E66ADF1689A870004FF85D /* TSTLabel.m */,
 			);
 			path = "ClearStyle 5";
 			sourceTree = "<group>";
@@ -189,10 +196,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				80E66AB416897A7A004FF85D /* main.m in Sources */,
-				80E66AB816897A7A004FF85D /* TSTAppDelegate.m in Sources */,
 				80E66ACD16897B1F004FF85D /* TSTTableViewController.m in Sources */,
 				80E66AD116898112004FF85D /* TSTToDoItem.m in Sources */,
-				80E66AD416898F64004FF85D /* TSTTableViewCell.m in Sources */,
+				80E66AD91689A304004FF85D /* TSTTableViewCell.m in Sources */,
+				80E66ADD1689A7A0004FF85D /* TSTAppDelegate.m in Sources */,
+				80E66AE01689A870004FF85D /* TSTLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

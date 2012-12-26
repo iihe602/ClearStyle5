@@ -85,7 +85,10 @@
     
     // Configure the cell...
     TSTToDoItem *item = _toDoItems[indexPath.row];
-    cell.textLabel.text = item.text;
+//    cell.textLabel.text = item.text;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.toDoItem = item;
+    cell.delegate = self;
     
     return cell;
 }
@@ -150,5 +153,17 @@
     cell.backgroundColor = [UIColor colorWithRed:1.0f green:green blue:0.0f alpha:1.0f];
 }
 
+#pragma make - TSTTableViewCellDelegate
+
+-(void)deleteToDoItem:(TSTToDoItem *)toDoItem
+{
+    NSUInteger row = [_toDoItems indexOfObject:toDoItem];
+    
+    [self.tableView beginUpdates];
+    [_toDoItems removeObject:toDoItem];
+    NSArray *deletions = @[[NSIndexPath indexPathForRow:row inSection:0]];
+    [self.tableView deleteRowsAtIndexPaths:deletions withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableView endUpdates];
+}
 
 @end
