@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 wyq. All rights reserved.
 //
 
+//测试 Gif
+
 #import "TSTAppDelegate.h"
 
 #import "TSTTableViewController.h"
