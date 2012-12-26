@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 wyq. All rights reserved.
 //
 
-//测试 Gif
+//测试 Gif 2012-12-26 21:32:57
 
 #import "TSTAppDelegate.h"
 
