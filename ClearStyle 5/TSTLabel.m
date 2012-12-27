@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 wyq. All rights reserved.
 //
 
+//test gif changes 3
+
 #import "TSTLabel.h"
 #import <QuartzCore/QuartzCore.h>
 
