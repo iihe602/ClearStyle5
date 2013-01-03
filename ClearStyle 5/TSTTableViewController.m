@@ -176,6 +176,8 @@
     
     float delay = 0.0f;
     
+    TSTTableViewCell *lastCell = [visibleCells lastObject];
+    
     for (TSTTableViewCell *cell in visibleCells) {
         if (startAnimation) {
             [UIView animateWithDuration:0.3
@@ -185,14 +187,16 @@
                                  cell.frame = CGRectOffset(cell.frame, 0, - cell.bounds.size.height);
                              }
                              completion:^(BOOL finished) {
-                                 [self.tableView reloadData];
+                                 if (cell == lastCell) {
+                                     [self.tableView reloadData];
+                                 }                                 
                              }];
             delay += 0.03;
         }
           
         if (cell.toDoItem == toDoItem) {
             startAnimation = YES;
-            
+            cell.hidden = YES;
         }
     }
     
