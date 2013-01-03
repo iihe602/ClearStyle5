@@ -123,7 +123,7 @@ const float CUELABEL_WIDTH = 50.0f;
         _completeOnRelease = _original.x + translationInView.x > self.bounds.size.width / 2;
         
         float alpha = fabsf(_original.x +translationInView.x) / fabsf(self.bounds.size.width / 2);
-        NSLog(@"%f", alpha);
+
         _crossLabel.textColor = alpha > 1.0f ? [UIColor redColor] : [UIColor colorWithWhite:1.0f alpha:alpha];
         _tickLabel.textColor = alpha > 1.0f ? [UIColor greenColor] : [UIColor colorWithWhite:1.0f alpha:alpha];
 
