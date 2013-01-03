@@ -170,6 +170,8 @@
 
 -(void)deleteToDoItem:(TSTToDoItem *)toDoItem
 {
+    [_toDoItems removeObject:toDoItem];
+    
     NSArray *visibleCells = [self.tableView visibleCells];
     
     bool startAnimation = false;
