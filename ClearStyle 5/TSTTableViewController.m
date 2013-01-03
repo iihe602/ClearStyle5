@@ -157,15 +157,53 @@
 
 #pragma make - TSTTableViewCellDelegate
 
+//-(void)deleteToDoItem:(TSTToDoItem *)toDoItem
+//{
+//    NSUInteger row = [_toDoItems indexOfObject:toDoItem];
+//    
+//    [self.tableView beginUpdates];
+//    [_toDoItems removeObject:toDoItem];
+//    NSArray *deletions = @[[NSIndexPath indexPathForRow:row inSection:0]];
+//    [self.tableView deleteRowsAtIndexPaths:deletions withRowAnimation:UITableViewRowAnimationFade];
+//    [self.tableView endUpdates];
+//}
+
 -(void)deleteToDoItem:(TSTToDoItem *)toDoItem
 {
-    NSUInteger row = [_toDoItems indexOfObject:toDoItem];
+    float delay = 0.0;
     
-    [self.tableView beginUpdates];
+    // remove the model object
     [_toDoItems removeObject:toDoItem];
-    NSArray *deletions = @[[NSIndexPath indexPathForRow:row inSection:0]];
-    [self.tableView deleteRowsAtIndexPaths:deletions withRowAnimation:UITableViewRowAnimationFade];
-    [self.tableView endUpdates];
+    
+    // find the visible cells
+    NSArray* visibleCells = [self.tableView visibleCells];
+    
+    UIView* lastView = [visibleCells lastObject];
+    bool startAnimating = false;
+    
+    // iterate over all of the cells
+    for(TSTTableViewCell* cell in visibleCells) {
+        if (startAnimating) {
+            [UIView animateWithDuration:0.3
+                                  delay:delay
+                                options:UIViewAnimationOptionCurveEaseInOut
+                             animations:^{
+                                 cell.frame = CGRectOffset(cell.frame, 0.0f, -cell.frame.size.height);
+                             }
+                             completion:^(BOOL finished){
+                                 if (cell == lastView) {
+                                     [self.tableView reloadData];
+                                 }
+                             }];
+            delay+=0.03;
+        }
+        
+        // if you have reached the item that was deleted, start animating
+        if (cell.toDoItem == toDoItem) {
+            startAnimating = true;
+            cell.hidden = YES;
+        }
+    }
 }
 
 @end
